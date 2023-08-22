@@ -1,0 +1,208 @@
+<!--complete HTML practice-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML complete practice</title>
+</head>
+<body>
+<!--Headings-->
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+    <h4>Heading 4</h4>
+    <h5>Heading 5</h5>
+    <h6>Heading 6</h6>
+
+<!--Text Formatting-->
+    <p> Regular text 
+        <b>Big Text</b>
+        <small>Small Text</small>
+        <strong>Strong Text</strong>
+        <em>Emphasized text</em>
+        <i>Italic text</i>
+        <sup>super scripted text</sup>
+        <sub>subscripted Text</sub>
+        <del>deleted text</del>
+        <mark>Marked text</mark> 
+        <pre>text      using
+                pre tag
+        </pre>
+    </p>
+
+<!--Image adding-->
+    <figure>
+        <img src="./images/img1.png" alt="img 1" height="150pt" draggable="true"/> 
+        <figcaption>
+            <details>
+                <summary>image caption</summary>
+                this screen shot taken from youtube channel named Abdul Bari.He is teaching time complexity topic in the screenshot.
+            </details>
+        </figcaption>
+    </figure>
+       
+<!--Creating a link-->
+
+    <a href="#">Creating a link</a>
+    <br>
+    
+<!--input types-->
+    <input placeholder="name" type="text" />
+    <input placeholder="email" type="email" />
+    <input placeholder="password" type="password" />
+    <input type="checkbox" >
+    <input type="range" />
+    <input type="date" />
+
+<!--Building lists-->
+
+    <ol start="4">
+        <li>list item </li>
+        <li>list item</li>
+        <li>list item</li>
+    </ol>
+    <ul>
+        <li>list item</li>
+        <li>list item</li>
+        <li>list item</li>
+    </ul>
+
+<!--forms-->
+    <h3>Registration form</h3>
+    <form>
+        <fieldset>
+            <legend>name</legend>
+            <label for="first_name">First name:</label>
+            <input id="first_name" placeholder="abc" type="text" />
+            <br />
+            <label for="last_name">Last name:</label>
+            <input id="last_name" placeholder="pqr" type="text" />    
+        </fieldset>
+        <fieldset>
+            <legend>Gender</legend> 
+            <input id="choice" type="radio" name="gender" value="M" />
+            <label for="choice">Male</label>
+            <input id="choice" type="radio" name="gender" value="F" />
+            <label for="choice">Female</label>
+            <input id="choice" type="radio" name="gender" value="O" />
+            <label for="choice">other</label>
+        </fieldset>
+        <fieldset>
+            <legend>Email</legend>
+            <label for="email">Email :</label>
+            <input id="email" placeholder="pqr@abc.com" type="email" />
+            <br>
+            <label for="pswd">password :</label>
+            <input id="pswd" placeholder="******" type="password" />
+        </fieldset>
+
+        <label for="mnth">Birth month</label>
+        <div>
+            <select id="mnth">
+                <option value="0" selected disabled>Month</option>
+                <option value="1">January</option>
+                <option value="2">February</option>
+                <option value="3">March</option>
+                <option value="4">April</option>
+                <option value="5">May</option>
+                <option value="6">June</option>
+                <option value="7">July</option>
+                <option value="8">August</option>
+                <option value="9">September</option>
+                <option value="10">October</option>
+                <option value="11">November</option>
+                <option value="12">December</option>            
+            </select>
+        </div>
+        <label for="check">I agree to all conditions</label>
+        <input id="check" type="checkbox" />
+        <br />
+        <button action="#" method="post">submit</button>
+    </form>
+    <hr />
+<!--Creating table-->   
+    <table border="1">
+        <thead>
+            <tr>
+                <th>First name</th>
+                <th>last name</th>
+            </tr>    
+        </thead>
+        <tbody>
+            <tr>
+                <td>Mahesh</td>
+                <td>panchireddi</td>
+            </tr>
+            <tr>
+                <td>Mohini</td>
+                <td>Panchireddi</td>
+            </tr> 
+        </tbody>       
+    </table>
+    <hr />
+<!--Quatation & citatio elments--> 
+    <blockquote>Defines section quoted from another source</blockquote> 
+    <q>Short quotation</q> <br />
+    <bbr>ABBR tag</bbr>
+    <address>
+        adress tag
+        renders in italic
+    </address>
+    <cite>cite tag</cite> <br />
+    <bdo>bdo tag used to override the current text direction</bdo> <br />
+    <bdo dir="rtl">bdo tag with direction from right to left</bdo>
+
+<!--HTML 5--> 
+<!--Audio source-->
+    <h3>Audio source</h3>
+    <audio src="./audio/t-rex-roar.mp3" controls autoplay>audio element not supported by your browser</audio>
+
+    <audio controls>
+        <source src="" type="audio/mpeg">
+        <source src="" type="aodio/ogg">
+    </audio>
+<!-- video source-->
+    <h3>Video source</h3>
+    <video controls>
+        <source src="" type="video/mp4" />
+        <source src="" type="video/ogg" />
+        video is not supported by ur browser
+    </video>
+<!--Progress element-->
+    <h3>Progress element</h3>
+    <progress min="0" max="100" value="60">60%</progress>
+<!--Drawing shapes-->
+    <h3>Drawimg Shapes</h3>
+
+    
+    <svg width="500" height="300" style="background-color: antiquewhite;">
+        <circle cx="60" cy="60" r="50" fill="green" stroke="blue"></circle>
+        <rect width="300" height="100" x="150" y="10" fill="green" stroke="orange"></rect>
+        <line x1="10" y1="150" x2="300" y2="200" 
+        style=" stroke: #000000;stroke-width: 20; stroke-linecap: round;"></line>
+    </svg>
+    <svg width="500" height="300" style="background-color: antiquewhite;">
+        <polyline style="stroke-linejoin:miter; stroke-width:12;fill:none; stroke:#000000" points="100 100,150 150,200 100"></polyline>
+    </svg>
+    <svg width="500" height="600" style="background-color: antiquewhite;">
+        <ellipse cx="200" cy="80" rx="100" ry="50" fill="green"></ellipse>
+
+        <polygon points="100 300, 120 350, 200 400, 200 200 "
+        style="fill: green; stroke: black;"></polygon>
+    </svg>
+
+<!--animations and paths-->
+    <h3>animations and paths</h3>
+    <svg width="100%" height="50">
+        <rect height="20" width="50" x="5" y="10" fill="none" stroke="black
+        " stroke-width="3">
+        <animate attributename="x" from="0" to="500" 
+             dur="3s" fill="freeze" repeatcount="indefinite"></animate>
+        </rect>     
+    </svg>    
+
+</body>
+</html>
